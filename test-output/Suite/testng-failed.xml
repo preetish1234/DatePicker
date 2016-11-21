@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="application_Test.CRM">
+        <methods>
+          <include name="BrowserEngin"/>
+          <include name="Login_to_gitHub" invocation-numbers="1"/>
+          <include name="Logconfig"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- application_Test.CRM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

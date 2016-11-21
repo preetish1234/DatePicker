@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36995" started-at="2016-11-21T20:25:34Z" finished-at="2016-11-21T20:26:11Z">
+    <groups>
+      <group name="GitHub-Login">
+        <method signature="CRM.Login_to_gitHub(java.lang.String, java.lang.String)[pri:1, instance:application_Test.CRM@5d76b067]" name="Login_to_gitHub" class="application_Test.CRM"/>
+      </group> <!-- GitHub-Login -->
+    </groups>
+    <test name="Default test" duration-ms="36995" started-at="2016-11-21T20:25:34Z" finished-at="2016-11-21T20:26:11Z">
+      <class name="application_Test.CRM">
+        <test-method status="PASS" signature="BrowserEngin()[pri:0, instance:application_Test.CRM@5d76b067]" name="BrowserEngin" is-config="true" duration-ms="355" started-at="2016-11-22T01:55:34Z" finished-at="2016-11-22T01:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserEngin -->
+        <test-method status="PASS" signature="Logconfig()[pri:0, instance:application_Test.CRM@5d76b067]" name="Logconfig" is-config="true" duration-ms="37" started-at="2016-11-22T01:55:35Z" finished-at="2016-11-22T01:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logconfig -->
+        <test-method status="PASS" signature="Login_to_gitHub(java.lang.String, java.lang.String)[pri:1, instance:application_Test.CRM@5d76b067]" name="Login_to_gitHub" duration-ms="20129" started-at="2016-11-22T01:55:35Z" data-provider="LoginData" finished-at="2016-11-22T01:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[preetish.m004@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mili21sep]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_to_gitHub -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:application_Test.CRM@5d76b067]" name="tearDown" is-config="true" duration-ms="1259" started-at="2016-11-22T01:55:56Z" finished-at="2016-11-22T01:55:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_to_gitHub status=SUCCESS method=CRM.Login_to_gitHub(java.lang.String, java.lang.String)[pri:1, instance:application_Test.CRM@5d76b067] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Logconfig()[pri:0, instance:application_Test.CRM@5d76b067]" name="Logconfig" is-config="true" duration-ms="17" started-at="2016-11-22T01:55:57Z" finished-at="2016-11-22T01:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logconfig -->
+        <test-method status="FAIL" signature="Login_to_gitHub(java.lang.String, java.lang.String)[pri:1, instance:application_Test.CRM@5d76b067]" name="Login_to_gitHub" duration-ms="13709" started-at="2016-11-22T01:55:57Z" data-provider="LoginData" finished-at="2016-11-22T01:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[preetish.m004@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mili21p]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[invalid user expected:<...se...> but was:<......>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: invalid user expected:<...se...> but was:<......>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at page.GitHubLogin_Page.Login_Method(GitHubLogin_Page.java:50)
+	at application_Test.CRM.Login_to_gitHub(CRM.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_to_gitHub -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:application_Test.CRM@5d76b067]" name="tearDown" is-config="true" duration-ms="742" started-at="2016-11-22T01:56:11Z" finished-at="2016-11-22T01:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_to_gitHub status=FAILURE method=CRM.Login_to_gitHub(java.lang.String, java.lang.String)[pri:1, instance:application_Test.CRM@5d76b067] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- application_Test.CRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
