@@ -6,7 +6,7 @@
 $ cd c:/preetish/shipping
 
 2.This will add a remote Repository to the github
-$ git remote add githubRepo https://github.com/preetish1234/GitHubProject.git
+$ git remote add githubRepo https://github.com/preetish1234/GitHubTest.git
 
 3.This will push the project to the gitHub 
 $ git push -u githubRepo master
